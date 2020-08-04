@@ -1,0 +1,18 @@
+.dialog{
+    padding: 20px;
+    iframe {
+        height: 400px!important;
+
+    }
+    div.mce-edit-area {
+        height: 400px;
+    }
+
+    md-card {
+        padding: 10px 0;
+        img.image {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+}

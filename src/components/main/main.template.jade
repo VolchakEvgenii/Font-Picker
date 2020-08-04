@@ -1,0 +1,37 @@
+md-sidenav.main-sidenav.md-whiteframe-z2(md-component-id="mainLeft")
+    md-list
+        md-list-item.layout-row.layout-align-start-center
+            md-button.flex(aria-label='Constructor', ui-sref="main.constructor", ui-sref-active="md-active", ng-click="vm.toggleSidenav('mainLeft')") Constructor
+        md-list-item.layout-row.layout-align-start-center
+            md-button.flex(aria-label='About', ui-sref="main.about", ui-sref-active="md-active", ng-click="vm.toggleSidenav('mainLeft')") About
+md-toolbar.main-toolbar
+    .md-toolbar-tools.layout-row.hide-gt-sm
+        md-button.md-raised.flex-20(aria-label="open menu", ng-click="vm.toggleSidenav('mainLeft')")
+            i.fa.fa-bars(aria-hidden="true")
+        .flex-60
+        a.logo.layout-row.layout-align-center-center(ui-sref="main.constructor")
+            span Font Picker
+    .md-toolbar-tools.flex-gt-sm-80.flex-offset-gt-sm-10.hide-sm.hide-xs
+        a.logo.layout-row.layout-align-center-center(ui-sref="main.constructor")
+            span Font Picker
+        md-nav-bar.flex(nav-bar-aria-label="navigation links", md-no-ink-bar="true")
+            md-nav-item(md-nav-sref="main.constructor", name="constructor", ui-sref-active="md-active") Constructor
+            md-nav-item(md-nav-sref="main.about", name="about", ui-sref-active="md-active") about
+md-content.main-content.flex
+    .flex-gt-sm-80.flex-offset-gt-sm-10.md-padding(ui-view="main")
+footer.main-footer
+    p If you have any questions, pleas contact me.
+    .layout-row.layout-align-space-around-center
+        a.social-btn(aria-label="skype" href="skype:volchak_jeka?chat")
+            i.fab.fa-skype(aria-hidden="true")
+            span.hide-sm.hide-xs volchak_jeka
+        a.social-btn(aria-label="skype" href="https://t.me/EugeneVol", target="_blank")
+            i.fab.fa-telegram-plane(aria-hidden="true")
+            span.hide-sm.hide-xs EugeneVol
+        a.social-btn(aria-label="phone", href="tel:+380932251761")
+            i.fas.fa-phone(aria-hidden="true")
+            span.hide-sm.hide-xs +380932251761
+        a.social-btn(aria-label="email", href="mailto:evgeniy.volchak@gmail.com")
+            i.fas.fa-envelope(aria-hidden="true")
+            span.hide-sm.hide-xs evgeniy.volchak@gmail.com
+

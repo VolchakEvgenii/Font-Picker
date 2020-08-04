@@ -1,0 +1,7 @@
+md-dialog.user-edit-dialog.dialog
+    md-dialog-content
+        textarea(data-ui-tinymce, data-ng-model="vm.tinymceHtml")
+
+    md-dialog-actions.layout-row.layout-align-center-center
+        md-button.flex-xs-33.md-raised.md-primary(ng-click="vm.dialogSave()") Save
+        md-button.flex-xs-33.md-raised.md-primary(ng-click="vm.dialogClose()") Close

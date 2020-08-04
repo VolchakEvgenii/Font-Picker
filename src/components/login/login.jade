@@ -1,0 +1,23 @@
+.login-wrapper.layout-column.layout-align-center-center
+    md-card
+        md-card-title
+            md-card-title-text.layout-align-center-center
+                h4.md-title Login
+        md-card-content
+            form.layout-column(name="vm.loginForm", role="form", novalidate="", ng-submit="vm.login(user)")
+                md-input-container(ng-class="{ 'md-input-invalid' : vm.loginForm.username.$invalid && !vm.loginForm.username.$pristine }")
+                    label Email
+                    input(type="email", required="", ng-model="vm.user.email", name="email", ng-minlength="10", ng-maxlength="100")
+                    .error-container(ng-messages='vm.loginForm.email.$error' ng-if="vm.loginForm.email.$dirty || vm.loginForm.email.$touched")
+                        .error(ng-message='required') Email field is required
+                        .error(ng-message='email') The email you entered is not valid
+                        .error(ng-message="minlength") Your email is too short.
+                md-input-container(ng-class="{ 'md-input-invalid' : vm.loginForm.password.$invalid && !vm.loginForm.password.$pristine }")
+                    label Password
+                    input(type="password", required="", ng-model="vm.user.password", name="password", ng-minlength="6", ng-maxlength="20")
+                    .error-container(ng-messages='vm.loginForm.password.$error' ng-if="vm.loginForm.password.$dirty || vm.loginForm.password.$touched")
+                        .error(ng-message='required') Password field is required
+                        .error(ng-message="minlength") Your password must be between 6 and 20 characters long.
+                        .error(ng-message="maxlength") Your password must be between 6 and 20 characters long.
+                label.error(ng-if="vm.error && !vm.loginForm.$dirty") {{vm.error}}
+                md-button.md-raised.md-primary(type="submit", ng-disabled="!vm.loginForm.$valid") Login

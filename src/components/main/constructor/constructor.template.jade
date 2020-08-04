@@ -1,0 +1,18 @@
+.summary-page
+    .layout-row.layout-xs-column
+        .flex-30.flex-xs-100
+            .layout-row
+                md-input-container.flex-100
+                    label Choose Font
+                    md-select(ng-model="vm.fontModel", ng-change="vm.onChangedFont()")
+                        md-option(ng-value="font" ng-repeat="font in vm.fontList") {{ font.family }}
+
+        .flex-70.flex-xs-100
+            .layout-row.layout-align-center-center(style="{{vm.fontStyle}}")
+                .flex-70(ng-bind-html="vm.originHtml")
+            .layout-row.layout-align-center-center
+                md-button.md-raised.md-primary(
+                    aria-label='edit button'
+                    ng-click="vm.openTextEditDialog()")
+                    span.md-padding Edit Text
+                    i.fas.fa-edit(aria-hidden="true")

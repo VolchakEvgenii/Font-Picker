@@ -1,0 +1,86 @@
+.main-sidenav {
+    md-list {
+        md-list-item {
+            border-bottom: 1px solid #cecece;
+        }
+        .md-button {
+            text-align: left;
+        }
+    }
+}
+
+.main-toolbar {
+    background-color: $color-main;
+    .md-toolbar-tools {
+        height: 64px;
+        max-height: 64px;
+        .logo {
+            height: calc(100% - 10px);
+            margin-right: 30px;
+            span {
+                font-size: 32px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+        .md-nav-bar {
+            border: none;
+            .md-nav-item {
+                .md-button {
+                    color: $color-master;
+                    border-bottom: 1px solid $color-master;
+                    margin: 0 2px;
+                    border-radius: 0;
+                }
+                &.md-active a {
+                    color: $color-white;
+                    background-color: #aed544;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    height: 100vh;
+    min-height: calc(100% - 90px);
+}
+
+.main-footer {
+    background-color: $color-main;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: end;
+    p {
+        text-align: center;
+        color: $color-master;
+    }
+    .social-btn {
+        font-size: 18px;
+        color: $color-master;
+        span {
+            margin-left: 10px;
+        }
+    }
+    a {
+
+    }
+}
+
+.md-button.md-primary.md-raised {
+    color: #F0F0F0;
+}
+
+@media (max-width: 660px) {
+    .main-toolbar {
+        .md-toolbar-tools {
+            ._md-nav-bar-list {
+                ._md-nav-button {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

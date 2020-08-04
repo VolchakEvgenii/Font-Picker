@@ -1,0 +1,45 @@
+.login-wrapper {
+  height: calc(100% - 5px);
+  md-card {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0;
+    .wrap-logo {
+      padding: 20px 70px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: $color-main;
+      .logo {
+        width: 100px;
+      }
+    }
+    md-button {
+      color: #ffffff;
+    }
+    label.error {
+      text-align: center;
+      padding: 10px 5px;
+      font-size: 12px;
+      color: rgb(221,44,0);
+    }
+  }
+  .error-container {
+    width: 285px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-wrapper {
+    md-card {
+      min-width: 300px;
+
+      .md-title {
+        margin: 5px 0;
+      }
+      .md-subhead {
+        margin: 5px 0;
+      }
+    }
+  }
+}
