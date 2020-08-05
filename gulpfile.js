@@ -26,7 +26,7 @@ var variables = {
         tmp: '.tmp/',
         app: 'src/',
         components: 'components/',
-        dist: 'dist/'
+        dist: 'docs/'
     }
 };
 variables.src.appJs = [variables.src.app + variables.src.components + variables.filters.js, '!' + variables.src.app + variables.src.components + variables.filters.js_spec];
