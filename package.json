@@ -49,7 +49,7 @@
     "jshint-stylish": "^2.2.0",
     "proxy-middleware": "^0.15.0",
     "react-scripts": "^0.7.0",
-    "shelljs": "^0.3.0",
+    "shelljs": "^0.8.5",
     "url": "^0.11.0",
     "wiredep": "^4.0.0",
     "yargs": "^6.2.0"
