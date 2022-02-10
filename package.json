@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "moment": "^2.20.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "npm": ">=6.13.4",
     "pug": "^2.0.0-rc.1",
     "q": "^1.5.1"
